@@ -1,7 +1,6 @@
 class CardFactory {
-    constructor(container, data, cards) {
-        this.container = container;
-        this.data = data;
+    constructor(elementContainer, cards) {
+        this.container = elementContainer;
         this.cards = cards;
 
         this._buildCards();
@@ -9,10 +8,9 @@ class CardFactory {
 
     _buildCards() {
         this.cards.forEach(card => {
-            const renderCard = card.build(this.data);
+            const renderCard = card._render();
             this.container.append(renderCard);
         });
-        
     }
 }
 
