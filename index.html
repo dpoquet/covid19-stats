@@ -15,15 +15,21 @@
     </head>
     <body>
         <div class="container mx-auto py-10 px-4">
-            <section>
-                <h1>Coronavirus Stats</h1>
-    
-                <div class="flex items-center">
+            <h1 class="mb-12">Coronavirus Stats</h1>
+
+            <section class="mb-10">
+                <div class="flex items-center mb-5">
                     <h2>Worldwide stats</h2>
                     <span>Last update: <strong class="js-last-update"></strong></span>
                 </div>
 
                 <div id="worldwide-container"></div>
+            </section>
+
+            <section>
+                <h2 class="mb-5">Stats by Country</h2>
+
+                <div id="table-container"></div>
             </section>
         </div>
     </body>
