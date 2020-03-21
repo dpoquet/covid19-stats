@@ -2,18 +2,27 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Coronavirus worldwide stats</title>
+        <meta name="description" content="Coronavirus worldwide stats made with modern Javascript and TailwindCSS. Open source project.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link as="script" rel="modulepreload" href="./src/main.js" />
         <link as="script" rel="modulepreload" href="./src/constants.js" />
 
-        <script type="module" src="./src/main.js"></script>
+        <script defer type="module" src="./src/main.js"></script>
 
-        <link rel="stylesheet" href="">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     </head>
     <body>
-
+        <div class="container mx-auto py-10 px-4">
+            <section>
+                <h1>Coronavirus Stats</h1>
+    
+                <div class="flex items-center">
+                    <h2>Worldwide stats</h2>
+                    <span>Last update: <strong class="js-last-update"></strong></span>
+                </div>
+            </section>
+        </div>
     </body>
 </html>

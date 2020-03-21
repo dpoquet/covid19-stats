@@ -1,6 +1,7 @@
-const API_URL = 'https://covid19.mathdro.id/api/';
-const DAILY_ENDPOINT = `${API_URL}daily`;
-const COUNTRIES_LIST_ENDPOINT = `${API_URL}confirmed`;
-const COUNTRY_ENDPOINT = `${API_URL}countries`;
+const API_URL = 'https://coronavirus-monitor.p.rapidapi.com/coronavirus/';
+const WORLDSTATS_ENDPOINT = `${API_URL}worldstat.php`;
+const COUNTRIES_LIST_ENDPOINT = `${API_URL}cases_by_country.php`;
+const RAPIDAPI_HOST = 'coronavirus-monitor.p.rapidapi.com';
+const RAPIDAPI_KEY = 'fb2696447bmsh197266ba8dc5aeep164af3jsn0adc6f37b348';
 
-export { DAILY_ENDPOINT, COUNTRIES_LIST_ENDPOINT, COUNTRY_ENDPOINT };
+export { WORLDSTATS_ENDPOINT, COUNTRIES_LIST_ENDPOINT, RAPIDAPI_HOST, RAPIDAPI_KEY };
