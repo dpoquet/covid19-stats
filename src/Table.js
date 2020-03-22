@@ -1,11 +1,12 @@
 class Table {
-    constructor(cells, data) {
-        this.cells = cells;
+    constructor(data) {
         this.data = data;
         this.tableElement = document.createElement('table');
+        this.tableElement.classList.add('text-left', 'w-full');
+        this.tableElement.style.minWidth = '750px';
     }
 
-    _render() {}
+    render() {}
 }
 
 export default Table;

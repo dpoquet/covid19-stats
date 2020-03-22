@@ -12,25 +12,42 @@
         <script defer type="module" src="./src/main.js"></script>
 
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                font-family: 'Montserrat', sans-serif;
+            }
+        </style>
     </head>
-    <body>
-        <div class="container mx-auto py-10 px-4">
-            <h1 class="mb-12">Coronavirus Stats</h1>
+    <body class="text-gray-900">
+        <main class="container mx-auto py-10 px-4">
+            <h1 class="font-semibold text-2xl sm:text-4xl mb-12">Coronavirus Stats</h1>
 
             <section class="mb-10">
-                <div class="flex items-center mb-5">
-                    <h2>Worldwide stats</h2>
-                    <span>Last update: <strong class="js-last-update"></strong></span>
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-5">
+                    <h2 class="font-semibold text-lg sm:text-xl mb-1 sm:mb-0">Worldwide stats</h2>
+                    <span class="text-sm">Last update: <strong class="js-last-update"></strong></span>
                 </div>
 
-                <div id="worldwide-container"></div>
+                <div id="worldwide-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"></div>
             </section>
 
             <section>
-                <h2 class="mb-5">Stats by Country</h2>
+                <h2 class="font-semibold text-lg sm:text-xl mb-5">Stats by Country</h2>
 
-                <div id="table-container"></div>
+                <div class="overflow-x-auto" id="table-container"></div>
             </section>
-        </div>
+        </main>
+
+        <footer class="py-4 px-4 text-center">
+            <p class="text-sm">
+                <a class="text-blue-500" rel="nofollow" target="_blank" href="https://rapidapi.com/astsiatsko/api/coronavirus-monitor">Data source API</a>
+                |
+                <a class="text-blue-500" rel="nofollow" target="_blank" href="https://github.com/dpoquet/covid19-stats">Source code</a>
+                |
+                By <a class="text-blue-500" rel="nofollow" target="_blank" href="https://twitter.com/dpoquet">@dpoquet</a>
+            </p>
+        </footer>
     </body>
 </html>

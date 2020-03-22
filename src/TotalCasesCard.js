@@ -5,11 +5,11 @@ class TotalCasesCard extends Card {
         super(data);
     }
 
-    _render() {
+    render() {
         this.cardElement.innerHTML = `
-            <h3>Total cases</h3>
-            <span>${parseFloat(this.data.total_cases)}</span>
-            <span>+${this.data.new_cases} registered today</span>
+            <h3 class="font-bold text-lg sm:text-xl mb-2">TOTAL CASES</h3>
+            <span class="block text-5xl font-semibold mb-5">${this.data.total_cases}</span>
+            <span class="block text-sm">+${this.data.new_cases} registered today</span>
         `;
 
         return this.cardElement;

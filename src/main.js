@@ -31,6 +31,6 @@ async function initCountryListStats() {
     let response = await getStatsByCountries();
     let countriesList = await response.json();
 
-    const countriesTableInstance = new CountriesTable(['Country', 'Cases', 'Deaths', 'Serious critical', 'Total recovered'], countriesList.countries_stat);
-    tableContainer.append(countriesTableInstance._render());
+    const countriesTableInstance = new CountriesTable(countriesList.countries_stat);
+    tableContainer.append(countriesTableInstance.render());
 }

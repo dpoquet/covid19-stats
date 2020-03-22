@@ -8,7 +8,7 @@ class CardFactory {
 
     _buildCards() {
         this.cards.forEach(card => {
-            const renderCard = card._render();
+            const renderCard = card.render();
             this.container.append(renderCard);
         });
     }

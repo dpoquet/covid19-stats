@@ -5,10 +5,10 @@ class TotalRecoveryCard extends Card {
         super(data);
     }
 
-    _render() {
+    render() {
         this.cardElement.innerHTML = `
-            <h3>Total Recovered</h3>
-            <span>${this.data.total_recovered}</span>
+            <h3 class="font-bold text-lg sm:text-xl mb-2">TOTAL RECOVERED</h3>
+            <span class="block text-5xl font-semibold mb-5 text-green-500">${this.data.total_recovered}</span>
         `;
 
         return this.cardElement;
