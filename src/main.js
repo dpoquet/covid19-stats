@@ -7,7 +7,7 @@ import CountriesTable from './CountriesTable.js';
 
 const lastUpdateBox = document.getElementsByClassName('js-last-update');
 const worldwideContainer = document.getElementById('worldwide-container');
-const tableContainer = document.getElementById('table-container');
+const countriesTableContainer = document.getElementById('countries-table-container');
 
 
 initWorldwideStats();
@@ -32,5 +32,5 @@ async function initCountryListStats() {
     let countriesList = await response.json();
 
     const countriesTableInstance = new CountriesTable(countriesList.countries_stat);
-    tableContainer.append(countriesTableInstance.render());
+    countriesTableContainer.append(countriesTableInstance.render());
 }
