@@ -19,29 +19,28 @@ class CountriesTable extends Table {
             let newCases = row.insertCell(5);
 
             countryName.innerHTML = country.country_name;
-            countryName.classList.add('w-1/6', 'py-4');
+            countryName.classList.add('w-1/6');
 
             cases.innerHTML = country.cases;
-            cases.classList.add('w-1/6', 'py-4');
+            cases.classList.add('w-1/6');
 
             active.innerHTML = country.active_cases;
-            active.classList.add('w-1/6', 'py-4');
+            active.classList.add('w-1/6');
 
             recovered.innerHTML = country.total_recovered;
-            recovered.classList.add('w-1/6', 'py-4', 'text-green-500');
+            recovered.classList.add('w-1/6', 'text-green-500');
 
             deaths.innerHTML = country.deaths;
-            deaths.classList.add('w-1/6', 'py-4', 'text-red-500');
+            deaths.classList.add('w-1/6', 'text-red-500');
 
             newCases.innerHTML = country.new_cases;
-            newCases.classList.add('w-1/6', 'py-4');
+            newCases.classList.add('w-1/6');
 
             row.classList.add('flex', 'items-center', 'w-full', 'border-b', 'border-gray-200');
         });
 
         let tBody = this.tableElement.getElementsByTagName('tbody')[0];
         tBody.classList.add('flex', 'flex-col', 'items-center', 'justify-between', 'overflow-y-scroll', 'w-full');
-        tBody.style.height = '500px';
 
         let tHead = this.tableElement.createTHead();
         let tHeadRow = tHead.insertRow();
