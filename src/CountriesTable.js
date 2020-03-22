@@ -5,6 +5,7 @@ class CountriesTable extends Table {
         super(data);
 
         this.cells = ['Country', 'Total cases', 'Active', 'Recovered', 'Deaths', 'New cases'];
+        this.tableElement.style.minWidth = '750px';
     }
 
     render() {
