@@ -11,3 +11,7 @@ npm install
 ```
 npm start
 ```
+
+## DEMO
+
+[View DEMO](https://covid19-stats.dpoquet.now.sh/)
