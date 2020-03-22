@@ -19,24 +19,24 @@ class CountriesTable extends Table {
             let newCases = row.insertCell(5);
 
             countryName.innerHTML = country.country_name;
-            countryName.classList.add('w-1/6');
+            countryName.classList.add('w-1/6', 'py-4');
 
             cases.innerHTML = country.cases;
-            cases.classList.add('w-1/6');
+            cases.classList.add('w-1/6', 'py-4');
 
             active.innerHTML = country.active_cases;
-            active.classList.add('w-1/6');
+            active.classList.add('w-1/6', 'py-4');
 
             recovered.innerHTML = country.total_recovered;
-            recovered.classList.add('w-1/6', 'text-green-500');
+            recovered.classList.add('w-1/6', 'py-4', 'text-green-500');
 
             deaths.innerHTML = country.deaths;
-            deaths.classList.add('w-1/6', 'text-red-500');
+            deaths.classList.add('w-1/6', 'py-4', 'text-red-500');
 
             newCases.innerHTML = country.new_cases;
-            newCases.classList.add('w-1/6');
+            newCases.classList.add('w-1/6', 'py-4');
 
-            row.classList.add('flex', 'items-center', 'w-full', 'py-4', 'border-b', 'border-gray-200');
+            row.classList.add('flex', 'items-center', 'w-full', 'border-b', 'border-gray-200');
         });
 
         let tBody = this.tableElement.getElementsByTagName('tbody')[0];

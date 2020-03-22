@@ -28,7 +28,7 @@
             <section class="mb-10">
                 <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-5">
                     <h2 class="font-semibold text-lg sm:text-xl mb-1 sm:mb-0">Worldwide stats</h2>
-                    <span class="text-sm">Last update: <strong class="js-last-update"></strong></span>
+                    <span class="text-sm hidden sm:block">Last update: <strong class="js-last-update"></strong></span>
                 </div>
 
                 <div id="worldwide-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"></div>
@@ -36,7 +36,7 @@
 
             <section>
                 <h2 class="font-semibold text-lg sm:text-xl mb-5">Stats by Country</h2>
-                <div class="overflow-x-auto" id="countries-table-container"></div>
+                <div class="overflow-x-scroll sm:overflow-x-auto" id="countries-table-container"></div>
             </section>
         </main>
 
