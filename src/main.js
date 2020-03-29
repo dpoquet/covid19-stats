@@ -31,6 +31,9 @@ async function initCountryListStats() {
     let response = await getStatsByCountries();
     let countriesList = await response.json();
 
+    // Sort by cases
+    countriesList.countries_stat.sort((countryA, countryB) => parseFloat(countryA.cases.replace(/,/g, '')) < parseFloat(countryB.cases.replace(/,/g, '')) ? 1 : -1);
+
     const countriesTableInstance = new CountriesTable(countriesList.countries_stat);
     countriesTableContainer.append(countriesTableInstance.render());
 }
